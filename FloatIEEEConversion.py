@@ -243,4 +243,5 @@ def binaryToFloat(binary):
   FinalResult = ((-1)**int(sign))*center*(2**int(exponentFinal))
   print("\nThe answer is: %s" % FinalResult)
 
-main()
+if __name__ == '__main__':
+    main()
