@@ -199,7 +199,6 @@ def normalize(binStart, binEnd):
   else:
       one = False
   mantissa = mantissa[:23]
-  print(one)
   for x in reversed(mantissa):
       if(one):
           if(x == "1"):
