@@ -194,7 +194,9 @@ def normalize(binStart, binEnd):
   mantissaA = normalize.split(".")
   mantissa = mantissaA[1][:24]
   ct = 22
-  if(mantissa[23] == "1"):
+  if(endLen > 23 and mantissa[23] == "1"):
+      one = True
+  elif(mantissa[endLen - 1] == "1"):
       one = True
   else:
       one = False
